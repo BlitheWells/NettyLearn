@@ -31,6 +31,7 @@ public class VectorTest {
          *     方法体，方法执行完释放 monitor。
          */
 
+        // 构建线程安全的 List
         List list = Collections.synchronizedList(new ArrayList());
     }
 }
