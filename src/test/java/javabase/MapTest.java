@@ -3,6 +3,7 @@ package javabase;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class MapTest {
@@ -19,6 +20,10 @@ public class MapTest {
 
         // concurrentHashMap
         ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap<String, Object>();
+
+        Object object;
+
+        Set set;
 
     }
 }

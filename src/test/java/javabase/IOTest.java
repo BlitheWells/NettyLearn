@@ -17,7 +17,7 @@ public class IOTest {
 
     //https://www.oreilly.com/learning/java-8-functional-interfaces
 
-    Runtime r;
+    Runtime r;// Runtime的单例模式实现
 
     // https://docs.oracle.com/javase/10/docs/api/java/util/concurrent/locks/AbstractQueuedSynchronizer.html
 

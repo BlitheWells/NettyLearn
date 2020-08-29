@@ -29,6 +29,10 @@ public class VectorTest {
          * 2. 在方法上加 synchronize 同步
          *     会在方法上加一个 ACC_SYNCHRONIZD 常量标示符，线程发现有该标示符会先获取 monitor, 获取成功后执行
          *     方法体，方法执行完释放 monitor。
+         *
+         * 3. synchronized 会有一个锁升级的过程，最初是偏向锁，在对象的 markword 中记录当前线程的 id， 如果一直
+         *    只有这个线程获取该对象锁，则锁不升级，若发现试图获取锁的线程不是 markword 中的线程 id， 中断线程
+         *    升级锁为轻量级锁，
          */
 
         // 构建线程安全的 List
